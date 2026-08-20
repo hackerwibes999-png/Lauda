@@ -1,4 +1,5 @@
 import os
+import sys  # Added this import
 import subprocess
 import shutil
 import zipfile
@@ -73,6 +74,7 @@ class BotManager:
         try:
             req_file = os.path.join(folder, 'requirements.txt')
             if os.path.isfile(req_file):
+                # Use sys.executable to get the current Python interpreter
                 result = subprocess.run(
                     [sys.executable, '-m', 'pip', 'install', '-r', req_file, '--quiet'],
                     cwd=folder,
