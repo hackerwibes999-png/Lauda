@@ -265,7 +265,7 @@ async def start(update: Update, context: ContextTypes.DEFAULT_TYPE):
         )
 
     welcome_text = (
-        "🤖 Welcome to Bot Hosting Service!By @Hackereibes\n\n"
+        "🤖 Welcome to Bot Hosting Service!By @Hackerwibes\n\n"
         "I can host your Telegram bots.\n\n"
         "Commands:\n"
         "/deploy - Upload and deploy a new bot\n"
