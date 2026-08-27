@@ -1,0 +1,12 @@
+[phases.setup]
+nixPkgs = [
+  "python311",
+  "nodejs",
+  "php",
+  "phpPackages.composer"
+]
+
+[phases.install]
+cmds = [
+  "pip install -r requirements.txt"
+]
